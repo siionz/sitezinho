@@ -4,5 +4,5 @@ function traduzir() {
 }
 
 function prosseguir() {
-  window.location.href = ".../paginas/fake.html";
+  window.location.href = "sitezinho/paginas/fake.html";
 }
