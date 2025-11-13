@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASE 3</title>
+    <link rel="stylesheet" href="../styles/fase3.css">
+</head>
+<body>
+    <header>
+        <h1>FASE 3</h1>
+    </header>
+
+    <main>
+        <p>Agora é hora de decifrar a mensagem escondida.</p>
+
+        <div class="sequencia">
+            <ul>
+                <li>Use o código: <b>A = 1, B = 2, C = 3, ... , Z = 26</b></li>
+                <li>Converta os números abaixo em letras.</li>
+                <li>Descubra o que está escrito e digite a resposta correta.</li>
+            </ul>
+
+            <p><strong>Mensagem codificada:</strong></p>
+            <p><b>7 - 15 - 19 - 20 - 15 / 13 - 21 - 9 - 20 - 15 / 4 - 5 / 22 - 15 - 3 - 5</b></p>
+        </div>
+
+        <h2>O que diz essa mensagem?</h2>
+        <BR><br>
+
+        <form>
+            <input type="text" id="resposta" placeholder="Digite sua resposta..." maxlength="27">
+            <br><br>
+            <button type="button" onclick="verificarResposta()">Confirmar</button>
+            <button type="button" onclick="mostrarDica()">Dica</button>
+            <button type="button" id="btnNext" style="display:none;" onclick="proximoEnigma(event)">Próxima Fase</button>
+        </form>
+
+        <div id="mensagem"></div>
+    </main>
+
+    <footer></footer>
+    <script src="../scripts.js/fase3.js"></script>
+</body>
+</html>

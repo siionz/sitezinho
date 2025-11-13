@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FASE 4 - S.O.S</title>
+  <link rel="stylesheet" href="../styles/fase4.css">
+</head>
+<body>
+  <header>
+    <h1>Fase 4 - S.O.S</h1>
+  </header>
+
+  <main>
+    <p>Decifre a mensagem abaixo e descubra o que está sendo dito:</p>
+
+    <div class="codigo">
+      <p><strong>.- -- . .. / --- / ... .. - .
+</strong></p>
+      <p><em>Dica inicial: pense em sinais e resgates...</em></p>
+    </div>
+
+    <h2>Qual é a mensagem oculta?</h2>
+    <br>
+
+    <form>
+      <input type="text" id="resposta" placeholder="Digite sua resposta..." maxlength="30">
+      <br><br>
+      <button type="button" onclick="verificarResposta()">Confirmar</button>
+      <button type="button" onclick="mostrarDica()">Dica</button>
+      <button type="button" id="btnNext" style="display:none;" onclick="proximaFase()">Próxima Fase</button>
+    </form>
+
+    <div id="mensagem"></div>
+  </main>
+
+  <footer></footer>
+
+  <script src="../scripts.js/fase4.js"></script>
+</body>
+</html>
