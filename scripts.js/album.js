@@ -18,12 +18,37 @@ let atual = 0;
 const img = document.getElementById("foto");
 img.src = fotos[atual];
 
-document.querySelector(".next").onclick = () => {
+// ======== FUNÇÃO PARA TROCAR FOTO ========
+function proxima() {
     atual = (atual + 1) % fotos.length;
     img.src = fotos[atual];
-};
+}
 
-document.querySelector(".prev").onclick = () => {
+function anterior() {
     atual = (atual - 1 + fotos.length) % fotos.length;
     img.src = fotos[atual];
-};
+}
+
+// ======== ARRASTAR COM DEDO E MOUSE ========
+let startX = 0;
+
+img.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+});
+
+img.addEventListener("touchend", e => {
+    const endX = e.changedTouches[0].clientX;
+    if (endX < startX - 50) proxima();      // arrastou para ESQUERDA
+    if (endX > startX + 50) anterior();     // arrastou para DIREITA
+});
+
+// Desktop (mouse)
+img.addEventListener("mousedown", e => {
+    startX = e.clientX;
+});
+
+img.addEventListener("mouseup", e => {
+    const endX = e.clientX;
+    if (endX < startX - 50) proxima();
+    if (endX > startX + 50) anterior();
+});
