@@ -98,8 +98,6 @@ button {
     background-color: #00bcd4;
     color: #121212;
     box-shadow: 0 4px 15px rgba(0, 188, 212, 0.4);
-    transition: background-color 0.3s ease-in-out, transform 0.15s, box-shadow 0.3s;
-    -webkit-tap-highlight-color: transparent;
 }
 
 button:hover {

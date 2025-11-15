@@ -80,8 +80,7 @@ button {
     border-radius: 10px;
     border: none;
     background-color: #00bcd4;
-    color: #121212;
-}
+    color: #121212;}
 
 button:hover {
     background-color: #0097a7;
